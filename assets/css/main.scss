@@ -2,6 +2,53 @@
 @import "minimal-mistakes";
 
 /* =========================
+   0️⃣ Site Wrapper / Container
+   ========================= */
+.site, 
+.site-wrapper {
+  background-color: #0a0f1c; /* dark background for entire page */
+  color: #e6f1ff;            /* ensure text remains readable */
+}
+
+/* =========================
+   Navbar adjustments
+   ========================= */
+.navbar {
+  background-color: #0f172a; /* slightly lighter than site wrapper */
+  padding: 0.5rem 1rem;
+}
+
+.navbar a, 
+.navbar .site-title, 
+.navbar .site-description {
+  color: #e6f1ff;  /* match body text */
+  font-size: 1rem; /* consistent with body */
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #00e5ff;
+  text-decoration: underline;
+}
+
+/* =========================
+   Footer adjustments
+   ========================= */
+.site-footer {
+  background-color: #0f172a; /* match navbar */
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.site-footer a {
+  color: #ffffff;
+}
+
+.site-footer a:hover { 
+  color: #00e5ff; 
+}
+
+/* =========================
    1️⃣ Global Fonts & Body
    ========================= */
 body, p, li, a, span, input, button {
