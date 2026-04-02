@@ -1,42 +1,36 @@
 ---
-layout: splash
+layout: home
+author_profile: true
 title: "Mich Sego"
-excerpt: "Data Scientist | Software Developer | Cybersecurity Enthusiast | Building AI-powered solutions from data"
-
-header:
-  overlay_image: /assets/images/profile.jpg
-  overlay_filter: 0.5
-
-actions:
-  - label: "View Projects"
-    url: "/projects/"
-  - label: "View Resume"
-    url: "/resume/"
-  - label: "Contact Me"
-    url: "/contact/"
 ---
 
-## 👋 About Me
-I am a Computer Technology graduate with a strong foundation in Data Science, Software Development, and AI-driven solutions. I specialize in transforming raw data into actionable insights and building intelligent applications that solve real-world problems.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+</head>
+<body class="home">
 
----
+  <!-- ===== HEADER / PHOTO & TAGLINE ===== -->
+  <header class="page__content" style="text-align:center; padding:60px 20px;">
+    <img src="/assets/images/bio-photo.jpg" alt="Mich Sego" width="200" style="border-radius:50%; border:2px solid #00e5ff;">
+    <h1 style="color:white; text-shadow:0 0 10px #00e5ff; margin-top:20px;">Mich Sego</h1>
+    <p style="color:#e6f1ff; font-size:1.2em; margin-top:10px;">
+      Data Scientist | Software Developer | AI & Web Projects
+    </p>
+  </header>
 
-## 🚀 Core Expertise
-- Data Science & Machine Learning  
-- Web & Application Development  
-- Data Analytics & Visualization  
-- ICT Support & Systems Administration  
-- Cybersecurity
+  <!-- ===== TECH STACK ===== -->
+  <section class="page__content" style="padding:40px 20px; border-radius:8px; margin:20px auto; max-width:800px;">
+    <h2 style="color:white; margin-bottom:20px;">🛠️ Tech Stack</h2>
+    <ul style="color:#e6f1ff; line-height:1.8; list-style-type:circle; padding-left:20px;">
+      <li><strong>Languages:</strong> Python, Java, PHP, JavaScript</li>
+      <li><strong>Data Tools:</strong> Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, TensorFlow, Keras</li>
+      <li><strong>Visualization:</strong> Tableau, Power BI</li>
+      <li><strong>Web:</strong> HTML, CSS, JS, MySQL</li>
+    </ul>
+  </section>
 
----
-
-## 🛠️ Tech Stack
-**Languages:** Python, Java, PHP, JavaScript  
-**Data Tools:** Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, TensorFlow, Keras  
-**Visualization:** Tableau, Power BI  
-**Web:** HTML, CSS, JS, MySQL  
-{% for post in site.posts %}
-  {% unless post.published == false %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endunless %}
-{% endfor %}
+</body>
+</html>
