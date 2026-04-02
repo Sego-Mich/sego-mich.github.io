@@ -1,6 +1,3 @@
----
----
-
 /* Import Minimal Mistakes default styles */
 @import "minimal-mistakes";
 
@@ -16,23 +13,25 @@ body, p, li, a, span, input, button {
 }
 
 /* =========================
-   2️⃣ Headings (No glow)
+   2️⃣ Headings
    ========================= */
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   font-family: "Inter", sans-serif;
-  font-weight: 700;
-  text-shadow: none; /* removed cyan glow */
+  font-weight: 600;        /* slightly lighter for consistency */
+  text-shadow: none;       /* removed cyan glow */
   margin-top: 1em;
   margin-bottom: 0.5em;
+  line-height: 1.4;
 }
 
-h1 { font-size: 2.5rem; }   /* main headings */
-h2 { font-size: 2rem; }     /* section headings */
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1.1rem; }
-h6 { font-size: 1rem; }
+/* Adjust header sizes to match body text balance */
+h1 { font-size: 1.6rem; }   /* main headings smaller than before */
+h2 { font-size: 1.4rem; }   /* section headings */
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1.1rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.95rem; }
 
 /* =========================
    3️⃣ Paragraphs & Lists
@@ -47,7 +46,7 @@ ul, ol {
 }
 
 /* =========================
-   4️⃣ Tech Stack / Page Content
+   4️⃣ Page Content
    ========================= */
 .page__content {
   background-color: #0f172a;
@@ -70,18 +69,25 @@ a:hover {
 }
 
 /* =========================
-   6️⃣ Navbar
+   6️⃣ Navbar Adjustments
    ========================= */
 .navbar {
-  background-color: #0a0f1c;
+  background-color: #0f172a;
+  padding: 0.5rem 1rem;
 }
 
-.navbar a, .navbar .site-title, .navbar .site-description {
-  color: #ffffff;
-  font-size: 1rem;
+.navbar a, 
+.navbar .site-title, 
+.navbar .site-description {
+  color: #e6f1ff;
+  font-size: 1rem; /* match body text exactly */
+  font-weight: 500;
 }
 
-.navbar a:hover { color: #00e5ff; }
+.navbar a:hover {
+  color: #00e5ff;
+  text-decoration: underline;
+}
 
 /* =========================
    7️⃣ Footer
@@ -96,21 +102,23 @@ a:hover {
   color: #ffffff;
 }
 
-.site-footer a:hover { color: #00e5ff; }
+.site-footer a:hover { 
+  color: #00e5ff; 
+}
 
 /* =========================
    8️⃣ Responsive Adjustments
    ========================= */
 @media screen and (max-width: 768px) {
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.6rem; }
-  h3 { font-size: 1.3rem; }
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.2rem; }
+  h3 { font-size: 1.1rem; }
   p, li { font-size: 0.95rem; }
 }
 
 @media screen and (max-width: 480px) {
-  h1 { font-size: 1.8rem; }
-  h2 { font-size: 1.4rem; }
-  h3 { font-size: 1.2rem; }
+  h1 { font-size: 1.2rem; }
+  h2 { font-size: 1.1rem; }
+  h3 { font-size: 1rem; }
   p, li { font-size: 0.9rem; }
 }
