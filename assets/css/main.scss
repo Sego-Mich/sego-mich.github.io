@@ -1,7 +1,7 @@
 ---
 ---
 
-/* Import the Minimal Mistakes default styles */
+/* Import default Minimal Mistakes styles */
 @import "minimal-mistakes";
 
 /* =========================
@@ -10,79 +10,74 @@
 body, p, li, a, span, input, button {
   font-family: "Inter", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.6;
+  font-size: 16px; /* base font size */
 }
 
 /* =========================
-   2️⃣ Body & Background
+   2️⃣ Headings
    ========================= */
-body {
-  background-color: #0a0f1c;  /* Dark background */
-  color: #e6f1ff;             /* Light cyan text */
-}
-
-/* =========================
-   3️⃣ Headings
-   ========================= */
-h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;             /* White headings */
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-}
-
 h1 {
-  text-shadow: 0 0 10px #00e5ff; /* Optional cyan glow for main heading */
+  color: #ffffff;
+  font-size: 3rem; /* Main heading */
+  font-weight: 700;
+  text-shadow: 0 0 10px #00e5ff;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 2rem; /* Section headings */
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 /* =========================
-   4️⃣ Links
+   3️⃣ Paragraphs
    ========================= */
-a {
-  color: #00e5ff;   /* Cyan links */
-  text-decoration: none;
-}
-
-a:hover {
-  color: #00bcd4;   /* Lighter cyan on hover */
-  text-decoration: underline;
+p {
+  font-size: 1rem;
+  color: #e6f1ff;
 }
 
 /* =========================
-   5️⃣ Buttons
+   4️⃣ Tech Stack List
    ========================= */
-.btn, .btn--primary {
-  background-color: #00e5ff;
-  color: #000;
-  border-radius: 5px;
-  padding: 0.5em 1em;
-  transition: all 0.2s ease-in-out;
-}
-
-.btn:hover, .btn--primary:hover {
-  background-color: #00bcd4;
-  color: #000;
+ul {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #e6f1ff;
+  padding-left: 20px;
 }
 
 /* =========================
-   6️⃣ Navbar
+   5️⃣ Navbar
    ========================= */
 .navbar {
-  background-color: #0a0f1c; /* Dark navbar background */
+  background-color: #0a0f1c;
 }
 
 .navbar a, .navbar .site-title, .navbar .site-description {
-  color: #ffffff;  /* White links and titles */
+  color: #ffffff;
+  font-size: 1rem;
 }
 
 .navbar a:hover {
-  color: #00e5ff;  /* Cyan hover */
+  color: #00e5ff;
 }
 
 /* =========================
-   7️⃣ Footer
+   6️⃣ Footer
    ========================= */
 .site-footer {
-  background-color: #0a0f1c;  /* Dark footer background */
-  color: #ffffff;             /* White footer text */
+  background-color: #0a0f1c;
+  color: #ffffff;
+  font-size: 0.95rem;
 }
 
 .site-footer a {
@@ -90,74 +85,42 @@ a:hover {
 }
 
 .site-footer a:hover {
-  color: #00e5ff;  /* Cyan hover */
+  color: #00e5ff;
 }
 
 /* =========================
-   8️⃣ Page Sections / Cards
+   7️⃣ Responsive adjustments
    ========================= */
-.page__content, .callout {
-  background-color: #0f172a; /* Dark card background */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  p, ul {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p, ul {
+    font-size: 0.9rem;
+  }
+}
+
+/* =========================
+   8️⃣ Page Sections
+   ========================= */
+.page__content {
+  background-color: #0f172a;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
-}
-
-/* =========================
-   9️⃣ Code Blocks & Inline Code
-   ========================= */
-pre, code {
-  background-color: #020617;
-  color: #00e5ff;
-  font-family: "Fira Code", "Courier New", monospace;
-  font-size: 0.95em;
-  padding: 5px 8px;
-  border-radius: 4px;
-}
-
-pre {
-  padding: 10px;
-  overflow-x: auto;
-}
-
-/* =========================
-   🔟 Lists
-   ========================= */
-ul, ol {
-  padding-left: 1.2em;
-  margin-bottom: 1em;
-}
-
-/* =========================
-   1️⃣1️⃣ Tables
-   ========================= */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 1em;
-}
-
-table th, table td {
-  border: 1px solid #00e5ff;
-  padding: 8px;
-  text-align: left;
-}
-
-table th {
-  background-color: #0f172a;
-  color: #ffffff;
-}
-
-table tr:nth-child(even) {
-  background-color: #0a0f1c;
-}
-
-/* =========================
-   1️⃣2️⃣ Tech Stack / Custom Highlights
-   ========================= */
-.technologies, .skills {
-  background-color: #0f172a;
-  color: #e6f1ff;
-  padding: 10px;
-  border-radius: 6px;
 }
