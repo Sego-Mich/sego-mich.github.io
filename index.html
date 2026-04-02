@@ -1,5 +1,6 @@
 ---
-layout: none
+layout: home
+author_profile: true
 title: "Mich Sego"
 ---
 
@@ -8,45 +9,34 @@ title: "Mich Sego"
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body class="home">
 
-  <!-- ===== MASTHEAD / PROFILE ===== -->
-  <header class="masthead page__content text-center">
-    <img src="{{ site.author.avatar }}" alt="{{ site.author.name }}" class="profile-pic">
-    <h1>{{ site.author.name }}</h1>
-    <p class="tagline">{{ site.author.bio }}</p>
+  <!-- ===== HEADER / PHOTO & TAGLINE ===== -->
+  <header class="page__content text-center" style="padding:60px 20px;">
+    <!-- Profile Avatar -->
+    <img src="/assets/images/profile.jpg" alt="Mich Sego" class="profile-pic">
 
-    <!-- Author Links -->
-    <div class="author-profile">
-      {% for link in site.author.links %}
-        <a href="{{ link.url }}" target="_blank">
-          <i class="{{ link.icon }}"></i>{{ link.label }}
-        </a>
-      {% endfor %}
-    </div>
+    <!-- Name -->
+    <h1 style="color:white; margin-top:20px; font-weight:700;">Mich Sego</h1>
+
+    <!-- Tagline -->
+    <p style="color:#a0c4ff; font-size:1.2em; margin-top:10px; max-width:700px; margin-left:auto; margin-right:auto;">
+      Data Scientist | Software Developer | Cybersecurity Enthusiast | Building AI-powered solutions from data
+    </p>
   </header>
 
   <!-- ===== TECH STACK ===== -->
-  <section class="page__content tech-stack">
-    <h2>🛠️ Tech Stack</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, Java, PHP, JavaScript</li>
-      <li><strong>Data Tools:</strong> Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, TensorFlow, Keras</li>
-      <li><strong>Visualization:</strong> Tableau, Power BI</li>
-      <li><strong>Web:</strong> HTML, CSS, JS, MySQL</li>
+  <section class="page__content tech-stack" style="padding:40px 20px; border-radius:10px; margin:20px auto; max-width:800px; background-color:#0f172a;">
+    <h2 style="color:#00e5ff; margin-bottom:25px; text-align:center;">🛠️ Tech Stack</h2>
+
+    <ul style="color:#e6f1ff; line-height:1.8; list-style-type:none; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:15px;">
+      <li style="background:#1a2333; padding:15px; border-radius:8px;"><strong>Languages:</strong> Python, Java, PHP, JavaScript</li>
+      <li style="background:#1a2333; padding:15px; border-radius:8px;"><strong>Data Tools:</strong> Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, TensorFlow, Keras</li>
+      <li style="background:#1a2333; padding:15px; border-radius:8px;"><strong>Visualization:</strong> Tableau, Power BI</li>
+      <li style="background:#1a2333; padding:15px; border-radius:8px;"><strong>Web:</strong> HTML, CSS, JS, MySQL</li>
     </ul>
   </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="site-footer text-center page__content">
-    {% for link in site.footer.links %}
-      <a href="{{ link.url }}" target="_blank">
-        <i class="{{ link.icon }}"></i>{{ link.label }}
-      </a>
-    {% endfor %}
-  </footer>
 
 </body>
 </html>
