@@ -1,68 +1,163 @@
 ---
 ---
 
+/* Import the Minimal Mistakes default styles */
 @import "minimal-mistakes";
 
-/* 🌌 Background */
-body {
-  background-color: #0a0f1c;
-  color: #e6f1ff;
+/* =========================
+   1️⃣ Global Fonts
+   ========================= */
+body, p, li, a, span, input, button {
+  font-family: "Inter", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
 }
 
-/* 🔷 Links (Cyan Accent) */
+/* =========================
+   2️⃣ Body & Background
+   ========================= */
+body {
+  background-color: #0a0f1c;  /* Dark background */
+  color: #e6f1ff;             /* Light cyan text */
+}
+
+/* =========================
+   3️⃣ Headings
+   ========================= */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;             /* White headings */
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  text-shadow: 0 0 10px #00e5ff; /* Optional cyan glow for main heading */
+}
+
+/* =========================
+   4️⃣ Links
+   ========================= */
 a {
-  color: #00e5ff;
+  color: #00e5ff;   /* Cyan links */
+  text-decoration: none;
 }
 
 a:hover {
-  color: #00bcd4;
+  color: #00bcd4;   /* Lighter cyan on hover */
+  text-decoration: underline;
 }
 
-/* 🔷 Buttons */
-.btn,
-.btn--primary {
+/* =========================
+   5️⃣ Buttons
+   ========================= */
+.btn, .btn--primary {
   background-color: #00e5ff;
   color: #000;
-  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  transition: all 0.2s ease-in-out;
 }
 
-.btn:hover {
+.btn:hover, .btn--primary:hover {
   background-color: #00bcd4;
   color: #000;
 }
 
-/* 🔷 Headers */
-h1, h2, h3 {
-  color: #00e5ff;
+/* =========================
+   6️⃣ Navbar
+   ========================= */
+.navbar {
+  background-color: #0a0f1c; /* Dark navbar background */
 }
 
-/* 🔷 Navigation Bar */
-.masthead {
-  background-color: #05070d;
+.navbar a, .navbar .site-title, .navbar .site-description {
+  color: #ffffff;  /* White links and titles */
 }
 
-/* 🔷 Cards / Sections */
-.page__content {
-  background-color: #0f172a;
+.navbar a:hover {
+  color: #00e5ff;  /* Cyan hover */
+}
+
+/* =========================
+   7️⃣ Footer
+   ========================= */
+.site-footer {
+  background-color: #0a0f1c;  /* Dark footer background */
+  color: #ffffff;             /* White footer text */
+}
+
+.site-footer a {
+  color: #ffffff;
+}
+
+.site-footer a:hover {
+  color: #00e5ff;  /* Cyan hover */
+}
+
+/* =========================
+   8️⃣ Page Sections / Cards
+   ========================= */
+.page__content, .callout {
+  background-color: #0f172a; /* Dark card background */
   padding: 20px;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-/* 🔷 Code blocks (great for labs/projects) */
+/* =========================
+   9️⃣ Code Blocks & Inline Code
+   ========================= */
 pre, code {
   background-color: #020617;
   color: #00e5ff;
-}
-/* Glow effect for headings */
-h1 {
-  text-shadow: 0 0 10px #00e5ff;
-}
-/* Subtle borders */
-.page__content {
-  border: 1px solid rgba(0, 229, 255, 0.2);
+  font-family: "Fira Code", "Courier New", monospace;
+  font-size: 0.95em;
+  padding: 5px 8px;
+  border-radius: 4px;
 }
 
-/* Smooth transitions */
-a, .btn {
-  transition: all 0.3s ease;
+pre {
+  padding: 10px;
+  overflow-x: auto;
+}
+
+/* =========================
+   🔟 Lists
+   ========================= */
+ul, ol {
+  padding-left: 1.2em;
+  margin-bottom: 1em;
+}
+
+/* =========================
+   1️⃣1️⃣ Tables
+   ========================= */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+table th, table td {
+  border: 1px solid #00e5ff;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+table tr:nth-child(even) {
+  background-color: #0a0f1c;
+}
+
+/* =========================
+   1️⃣2️⃣ Tech Stack / Custom Highlights
+   ========================= */
+.technologies, .skills {
+  background-color: #0f172a;
+  color: #e6f1ff;
+  padding: 10px;
+  border-radius: 6px;
 }
