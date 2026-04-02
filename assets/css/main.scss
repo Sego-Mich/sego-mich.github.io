@@ -1,0 +1,68 @@
+---
+---
+
+@import "minimal-mistakes";
+
+/* 🌌 Background */
+body {
+  background-color: #0a0f1c;
+  color: #e6f1ff;
+}
+
+/* 🔷 Links (Cyan Accent) */
+a {
+  color: #00e5ff;
+}
+
+a:hover {
+  color: #00bcd4;
+}
+
+/* 🔷 Buttons */
+.btn,
+.btn--primary {
+  background-color: #00e5ff;
+  color: #000;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #00bcd4;
+  color: #000;
+}
+
+/* 🔷 Headers */
+h1, h2, h3 {
+  color: #00e5ff;
+}
+
+/* 🔷 Navigation Bar */
+.masthead {
+  background-color: #05070d;
+}
+
+/* 🔷 Cards / Sections */
+.page__content {
+  background-color: #0f172a;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* 🔷 Code blocks (great for labs/projects) */
+pre, code {
+  background-color: #020617;
+  color: #00e5ff;
+}
+/* Glow effect for headings */
+h1 {
+  text-shadow: 0 0 10px #00e5ff;
+}
+/* Subtle borders */
+.page__content {
+  border: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+/* Smooth transitions */
+a, .btn {
+  transition: all 0.3s ease;
+}

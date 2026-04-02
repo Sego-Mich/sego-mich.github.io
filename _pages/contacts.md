@@ -1,8 +1,16 @@
 ---
+layout: single
 title: "Contact"
 permalink: /contact/
 ---
 
-- Email: segomich227@gmail.com  
-- GitHub: file:///C:/Users/Mich/Desktop/https/github.com/Sego-Mich
-- LinkedIn: https://www.linkedin.com/in/sego-mich-213646208/  
+## 📫 Get In Touch
+
+- 📧 Email: your@email.com  
+- 💻 GitHub: https://github.com/yourusername  
+- 🔗 LinkedIn: https://linkedin.com/in/yourprofile  
+- 📞 Phone: +254 XXX XXX XXX  
+
+---
+
+Feel free to reach out for collaboration, projects, or opportunities.
