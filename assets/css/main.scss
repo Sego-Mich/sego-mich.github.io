@@ -1,62 +1,76 @@
 ---
 ---
 
-/* Import default Minimal Mistakes styles */
+/* Import Minimal Mistakes default styles */
 @import "minimal-mistakes";
 
 /* =========================
-   1️⃣ Global Fonts
+   1️⃣ Global Fonts & Body
    ========================= */
 body, p, li, a, span, input, button {
   font-family: "Inter", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.6;
-  font-size: 16px; /* base font size */
+  font-size: 16px; /* base font size for both HTML and Markdown */
+  color: #e6f1ff;
+  background-color: #0a0f1c; /* dark body background */
 }
 
 /* =========================
-   2️⃣ Headings
+   2️⃣ Headings (No glow)
    ========================= */
-h1 {
+h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
-  font-size: 3rem; /* Main heading */
+  font-family: "Inter", sans-serif;
   font-weight: 700;
-  text-shadow: 0 0 10px #00e5ff;
+  text-shadow: none; /* removed cyan glow */
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5rem; }   /* main headings */
+h2 { font-size: 2rem; }     /* section headings */
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+
+/* =========================
+   3️⃣ Paragraphs & Lists
+   ========================= */
+p, li {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+ul, ol {
+  padding-left: 1.2em;
+}
+
+/* =========================
+   4️⃣ Tech Stack / Page Content
+   ========================= */
+.page__content {
+  background-color: #0f172a;
+  padding: 20px;
+  border-radius: 8px;
   margin-bottom: 20px;
 }
 
-h2 {
-  color: #ffffff;
-  font-size: 2rem; /* Section headings */
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-h3 {
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
 /* =========================
-   3️⃣ Paragraphs
+   5️⃣ Links
    ========================= */
-p {
-  font-size: 1rem;
-  color: #e6f1ff;
+a {
+  color: #00e5ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00bcd4;
+  text-decoration: underline;
 }
 
 /* =========================
-   4️⃣ Tech Stack List
-   ========================= */
-ul {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #e6f1ff;
-  padding-left: 20px;
-}
-
-/* =========================
-   5️⃣ Navbar
+   6️⃣ Navbar
    ========================= */
 .navbar {
   background-color: #0a0f1c;
@@ -67,12 +81,10 @@ ul {
   font-size: 1rem;
 }
 
-.navbar a:hover {
-  color: #00e5ff;
-}
+.navbar a:hover { color: #00e5ff; }
 
 /* =========================
-   6️⃣ Footer
+   7️⃣ Footer
    ========================= */
 .site-footer {
   background-color: #0a0f1c;
@@ -84,43 +96,21 @@ ul {
   color: #ffffff;
 }
 
-.site-footer a:hover {
-  color: #00e5ff;
-}
+.site-footer a:hover { color: #00e5ff; }
 
 /* =========================
-   7️⃣ Responsive adjustments
+   8️⃣ Responsive Adjustments
    ========================= */
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2.2rem;
-  }
-  h2 {
-    font-size: 1.6rem;
-  }
-  p, ul {
-    font-size: 0.95rem;
-  }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.3rem; }
+  p, li { font-size: 0.95rem; }
 }
 
 @media screen and (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-  h2 {
-    font-size: 1.4rem;
-  }
-  p, ul {
-    font-size: 0.9rem;
-  }
-}
-
-/* =========================
-   8️⃣ Page Sections
-   ========================= */
-.page__content {
-  background-color: #0f172a;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.2rem; }
+  p, li { font-size: 0.9rem; }
 }

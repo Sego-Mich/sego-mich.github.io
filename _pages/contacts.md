@@ -6,10 +6,10 @@ permalink: /contact/
 
 ## 📫 Get In Touch
 
-- 📧 Email: your@email.com  
-- 💻 GitHub: https://github.com/yourusername  
-- 🔗 LinkedIn: https://linkedin.com/in/yourprofile  
-- 📞 Phone: +254 XXX XXX XXX  
+- 📧 Email: segomich227@email.com  
+- 💻 GitHub: https://github.com/Sego-Mich 
+- 🔗 LinkedIn: https://www.linkedin.com/in/sego-mich-213646208/ 
+
 
 ---
 
