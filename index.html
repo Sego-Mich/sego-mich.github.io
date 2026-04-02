@@ -35,3 +35,8 @@ I am a Computer Technology graduate with a strong foundation in Data Science, So
 **Data Tools:** Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, TensorFlow, Keras  
 **Visualization:** Tableau, Power BI  
 **Web:** HTML, CSS, JS, MySQL  
+{% for post in site.posts %}
+  {% unless post.published == false %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endunless %}
+{% endfor %}
