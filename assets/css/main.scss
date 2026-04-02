@@ -1,91 +1,55 @@
-/* Import Minimal Mistakes default styles */
-@import "minimal-mistakes";
-
 /* =========================
    0️⃣ Site Wrapper / Container
    ========================= */
-/* =========================
-   Masthead / Header
-   ========================= */
-.masthead, 
-.header, 
-.site-header {
-  background-color: #0f172a !important; /* match dark page theme */
-  color: #e6f1ff;                       /* ensure text remains readable */
-}
-
-/* Adjust any h1/h2 in masthead */
-.masthead h1, 
-.masthead h2, 
-.header h1, 
-.header h2 {
-  color: #ffffff;
-  text-shadow: none;  /* remove glow if present */
-}
-
-/* =========================
-   Footer
-   ========================= */
-.site-footer {
-  background-color: #0f172a !important; /* dark footer */
-  color: #ffffff;
-}
-
-/* Footer links */
-.site-footer a {
-  color: #ffffff;
-}
-
-.site-footer a:hover {
-  color: #00e5ff;
-}
-
-/* =========================
-   1️⃣ Global Fonts & Body
-   ========================= */
-body, p, li, a, span, input, button {
-  font-family: "Inter", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  font-size: 16px; /* base font size for both HTML and Markdown */
+.site, 
+.site-wrapper {
+  background-color: #0a0f1c; /* dark background for entire page */
   color: #e6f1ff;
-  background-color: #0a0f1c; /* dark body background */
 }
 
 /* =========================
-   2️⃣ Headings
+   1️⃣ Masthead / Header
    ========================= */
-h1, h2, h3, h4, h5, h6 {
+.masthead,
+.site-header,
+.header {
+  background-color: #0f172a !important; /* dark masthead */
+  color: #e6f1ff;
+  border-bottom: none;
+}
+
+.masthead h1,
+.masthead h2,
+.site-header h1,
+.site-header h2 {
   color: #ffffff;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;        /* slightly lighter for consistency */
-  text-shadow: none;       /* removed cyan glow */
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  line-height: 1.4;
+  text-shadow: none;
+  font-weight: 600;
 }
 
-/* Adjust header sizes to match body text balance */
-h1 { font-size: 1.6rem; }   /* main headings smaller than before */
-h2 { font-size: 1.4rem; }   /* section headings */
-h3 { font-size: 1.2rem; }
-h4 { font-size: 1.1rem; }
-h5 { font-size: 1rem; }
-h6 { font-size: 0.95rem; }
-
 /* =========================
-   3️⃣ Paragraphs & Lists
+   2️⃣ Navbar
    ========================= */
-p, li {
-  font-size: 1rem;
-  line-height: 1.8;
+.navbar {
+  background-color: #0f172a !important;
+  padding: 0.5rem 1rem;
 }
 
-ul, ol {
-  padding-left: 1.2em;
+.navbar a,
+.navbar .site-title,
+.navbar .site-description {
+  color: #e6f1ff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #00e5ff;
+  text-decoration: underline;
 }
 
 /* =========================
-   4️⃣ Page Content
+   3️⃣ Page Content
    ========================= */
 .page__content {
   background-color: #0f172a;
@@ -95,7 +59,7 @@ ul, ol {
 }
 
 /* =========================
-   5️⃣ Links
+   4️⃣ Markdown Links
    ========================= */
 a {
   color: #00e5ff;
@@ -108,41 +72,50 @@ a:hover {
 }
 
 /* =========================
-   6️⃣ Navbar Adjustments
-   ========================= */
-.navbar {
-  background-color: #0f172a;
-  padding: 0.5rem 1rem;
-}
-
-.navbar a, 
-.navbar .site-title, 
-.navbar .site-description {
-  color: #e6f1ff;
-  font-size: 1rem; /* match body text exactly */
-  font-weight: 500;
-}
-
-.navbar a:hover {
-  color: #00e5ff;
-  text-decoration: underline;
-}
-
-/* =========================
-   7️⃣ Footer
+   5️⃣ Footer
    ========================= */
 .site-footer {
-  background-color: #0a0f1c;
+  background-color: #0f172a !important; /* dark footer */
   color: #ffffff;
-  font-size: 0.95rem;
+  border-top: none;
 }
 
 .site-footer a {
   color: #ffffff;
 }
 
-.site-footer a:hover { 
-  color: #00e5ff; 
+.site-footer a:hover {
+  color: #00e5ff;
+}
+
+/* =========================
+   6️⃣ Headings (uniform for markdown & page)
+   ========================= */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: none;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1.1rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.95rem; }
+
+/* =========================
+   7️⃣ Paragraphs & Lists
+   ========================= */
+p, li {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+ul, ol {
+  padding-left: 1.2em;
 }
 
 /* =========================
