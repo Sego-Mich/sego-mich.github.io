@@ -4,48 +4,40 @@
 /* =========================
    0️⃣ Site Wrapper / Container
    ========================= */
-.site, 
-.site-wrapper {
-  background-color: #0a0f1c; /* dark background for entire page */
-  color: #e6f1ff;            /* ensure text remains readable */
-}
-
 /* =========================
-   Navbar adjustments
+   Masthead / Header
    ========================= */
-.navbar {
-  background-color: #0f172a; /* slightly lighter than site wrapper */
-  padding: 0.5rem 1rem;
+.masthead, 
+.header, 
+.site-header {
+  background-color: #0f172a !important; /* match dark page theme */
+  color: #e6f1ff;                       /* ensure text remains readable */
 }
 
-.navbar a, 
-.navbar .site-title, 
-.navbar .site-description {
-  color: #e6f1ff;  /* match body text */
-  font-size: 1rem; /* consistent with body */
-  font-weight: 500;
-}
-
-.navbar a:hover {
-  color: #00e5ff;
-  text-decoration: underline;
+/* Adjust any h1/h2 in masthead */
+.masthead h1, 
+.masthead h2, 
+.header h1, 
+.header h2 {
+  color: #ffffff;
+  text-shadow: none;  /* remove glow if present */
 }
 
 /* =========================
-   Footer adjustments
+   Footer
    ========================= */
 .site-footer {
-  background-color: #0f172a; /* match navbar */
+  background-color: #0f172a !important; /* dark footer */
   color: #ffffff;
-  font-size: 0.95rem;
 }
 
+/* Footer links */
 .site-footer a {
   color: #ffffff;
 }
 
-.site-footer a:hover { 
-  color: #00e5ff; 
+.site-footer a:hover {
+  color: #00e5ff;
 }
 
 /* =========================
