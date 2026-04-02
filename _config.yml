@@ -63,34 +63,22 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Mich Sego"
-  avatar : "/assets/images/profile.jpg"
-  bio    : "Data Science graduate with a background in Computer Technology, skilled in Python, Java, and PHP. Passionate about building AI-driven solutions and extracting insights through machine learning and data visualization tools."
+  name: "Mich Sego"
+  avatar: "/assets/images/profile.jpg"
+  bio: "Data Science graduate with a background in Computer Technology, skilled in Python, Java, and PHP. Passionate about building AI-driven solutions and extracting insights through machine learning and data visualization tools."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "sego-mich.github.io"
-    #- label: "Twitter"
-      #icon: "fab fa-fw fa-twitter-square"
-     # url: "https://twitter.com/"
+      url: "https://sego-mich.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Sego-Mich"
-    #- label: "Instagram"
-      #icon: "fab fa-fw fa-instagram"
-      #url: "https://instagram.com/"
 
 footer:
   links:
-    #- label: "Twitter"
-      #icon: "fab fa-fw fa-twitter-square"
-      #url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Sego-Mich"
-    #- label: "Instagram"
-     # icon: "fab fa-fw fa-instagram"
-      #url: "https://instagram.com/"
 sass:
   style: compressed
 defaults:

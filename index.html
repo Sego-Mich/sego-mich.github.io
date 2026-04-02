@@ -1,6 +1,5 @@
 ---
-layout: home
-author_profile: true
+layout: none
 title: "Mich Sego"
 ---
 
@@ -9,27 +8,45 @@ title: "Mich Sego"
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body class="home">
 
-  <!-- ===== HEADER / PHOTO & TAGLINE ===== -->
-  <header class="page__content" style="text-align:center; padding:60px 20px;">
-    <h1 style="color:white; text-shadow:0 0 10px #00e5ff; margin-top:20px;">Mich Sego</h1>
-    <p style="color:#e6f1ff; font-size:1.2em; margin-top:10px;">
-      Data Scientist	Software Developer	Cybersecurity Enthusiast	Building AI-powered solutions from data
-    </p>
+  <!-- ===== MASTHEAD / PROFILE ===== -->
+  <header class="masthead page__content text-center">
+    <img src="{{ site.author.avatar }}" alt="{{ site.author.name }}" class="profile-pic">
+    <h1>{{ site.author.name }}</h1>
+    <p class="tagline">{{ site.author.bio }}</p>
+
+    <!-- Author Links -->
+    <div class="author-profile">
+      {% for link in site.author.links %}
+        <a href="{{ link.url }}" target="_blank">
+          <i class="{{ link.icon }}"></i>{{ link.label }}
+        </a>
+      {% endfor %}
+    </div>
   </header>
 
   <!-- ===== TECH STACK ===== -->
-  <section class="page__content" style="padding:40px 20px; border-radius:8px; margin:20px auto; max-width:800px;">
-    <h2 style="color:white; margin-bottom:20px;">🛠️ Tech Stack</h2>
-    <ul style="color:#e6f1ff; line-height:1.8; list-style-type:circle; padding-left:20px;">
+  <section class="page__content tech-stack">
+    <h2>🛠️ Tech Stack</h2>
+    <ul>
       <li><strong>Languages:</strong> Python, Java, PHP, JavaScript</li>
       <li><strong>Data Tools:</strong> Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, TensorFlow, Keras</li>
       <li><strong>Visualization:</strong> Tableau, Power BI</li>
       <li><strong>Web:</strong> HTML, CSS, JS, MySQL</li>
     </ul>
   </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer text-center page__content">
+    {% for link in site.footer.links %}
+      <a href="{{ link.url }}" target="_blank">
+        <i class="{{ link.icon }}"></i>{{ link.label }}
+      </a>
+    {% endfor %}
+  </footer>
 
 </body>
 </html>

@@ -1,56 +1,64 @@
-/* =========================
-   0️⃣ Site Wrapper / Container
-   ========================= */
-.site, 
+/* ===============================
+   Dark Theme - Global Styling
+   Professional, maintainable, Minimal Mistakes
+   =============================== */
+
+/* -------------------------------
+   0️⃣ Site Wrapper / Base Background
+   ------------------------------- */
+.site,
 .site-wrapper {
   background-color: #0a0f1c; /* dark background for entire page */
   color: #e6f1ff;
+  font-family: "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
-/* =========================
+/* -------------------------------
    1️⃣ Masthead / Header
-   ========================= */
+   ------------------------------- */
 .masthead,
 .site-header,
 .header {
-  background-color: #0f172a !important; /* dark masthead */
+  background-color: #0f172a;
   color: #e6f1ff;
   border-bottom: none;
+
+  h1, h2 {
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: none;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
 }
 
-.masthead h1,
-.masthead h2,
-.site-header h1,
-.site-header h2 {
-  color: #ffffff;
-  text-shadow: none;
-  font-weight: 600;
-}
-
-/* =========================
+/* -------------------------------
    2️⃣ Navbar
-   ========================= */
+   ------------------------------- */
 .navbar {
-  background-color: #0f172a !important;
+  background-color: #0f172a;
   padding: 0.5rem 1rem;
+
+  a,
+  .site-title,
+  .site-description {
+    color: #e6f1ff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #00e5ff;
+    text-decoration: underline;
+  }
 }
 
-.navbar a,
-.navbar .site-title,
-.navbar .site-description {
-  color: #e6f1ff;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.navbar a:hover {
-  color: #00e5ff;
-  text-decoration: underline;
-}
-
-/* =========================
+/* -------------------------------
    3️⃣ Page Content
-   ========================= */
+   ------------------------------- */
 .page__content {
   background-color: #0f172a;
   padding: 20px;
@@ -58,45 +66,47 @@
   margin-bottom: 20px;
 }
 
-/* =========================
+/* -------------------------------
    4️⃣ Markdown Links
-   ========================= */
+   ------------------------------- */
 a {
   color: #00e5ff;
   text-decoration: none;
+
+  &:hover {
+    color: #00bcd4;
+    text-decoration: underline;
+  }
 }
 
-a:hover {
-  color: #00bcd4;
-  text-decoration: underline;
-}
-
-/* =========================
+/* -------------------------------
    5️⃣ Footer
-   ========================= */
+   ------------------------------- */
 .site-footer {
-  background-color: #0f172a !important; /* dark footer */
+  background-color: #0f172a;
   color: #ffffff;
   border-top: none;
+  font-size: 0.95rem;
+
+  a {
+    color: #ffffff;
+
+    &:hover {
+      color: #00e5ff;
+    }
+  }
 }
 
-.site-footer a {
-  color: #ffffff;
-}
-
-.site-footer a:hover {
-  color: #00e5ff;
-}
-
-/* =========================
-   6️⃣ Headings (uniform for markdown & page)
-   ========================= */
+/* -------------------------------
+   6️⃣ Headers (Markdown & Page)
+   ------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   font-weight: 600;
   text-shadow: none;
   margin-top: 1em;
   margin-bottom: 0.5em;
+  line-height: 1.4;
 }
 
 h1 { font-size: 1.6rem; }
@@ -106,9 +116,9 @@ h4 { font-size: 1.1rem; }
 h5 { font-size: 1rem; }
 h6 { font-size: 0.95rem; }
 
-/* =========================
+/* -------------------------------
    7️⃣ Paragraphs & Lists
-   ========================= */
+   ------------------------------- */
 p, li {
   font-size: 1rem;
   line-height: 1.8;
@@ -118,9 +128,9 @@ ul, ol {
   padding-left: 1.2em;
 }
 
-/* =========================
+/* -------------------------------
    8️⃣ Responsive Adjustments
-   ========================= */
+   ------------------------------- */
 @media screen and (max-width: 768px) {
   h1 { font-size: 1.4rem; }
   h2 { font-size: 1.2rem; }
@@ -133,4 +143,25 @@ ul, ol {
   h2 { font-size: 1.1rem; }
   h3 { font-size: 1rem; }
   p, li { font-size: 0.9rem; }
+}
+
+/* -------------------------------
+   9️⃣ Optional subtle horizontal rule
+   ------------------------------- */
+hr {
+  margin: 1.5em 0;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+/* ===============================
+   Sidebar / Author Avatar Styling
+   =============================== */
+.author-avatar {
+  width: 120px;               /* fixed width */
+  height: 120px;              /* equal height for circle */
+  border-radius: 50%;         /* perfect circle */
+  object-fit: cover;          /* preserves aspect ratio, crops excess */
+  border: 2px solid #00e5ff; /* subtle cyan outline */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 0 auto 15px auto;   /* centers avatar with spacing below */
 }
